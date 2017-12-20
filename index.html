@@ -4,75 +4,36 @@
     <meta charset="utf-8">
     <title>Books For Hire</title>
    <link rel="stylesheet" href="css/lab4.css" />
+   <script src="js/lab4.js"></script>
   </head>
   <body>
     <div id="page">
       <h1 id="header">Books</h1>
-      <h2>Best Sellers </h2>
+      <h2>Your Personal Bookstore</h2>
       <br />
-        <button id="btn">Get Key</button>
+        <button id="apiBtn">Get Key</button>
         <br />
-        <div id="text"></div><br />
+        <div id="apiOutput"></div><br />
       
-   
+            <h2>Status<br />
+        <div id="result"></div>
+ 
       <br />
       
       <div class="newItemForm">
 
-         <button id="addBook">Add Book</button>
+         <button id="addBtn">Add Book</button>
         <input type="text" id="addTitle" placeholder="Title" /><br />
         <input type="text" id="addAuthor" placeholder="Author" /><br />
       </div>
-      <br /><
-      <div id="text2"></div>
-      <button id="viewBooks">Your Library</button>
-      <ul>
-        <li id="one" class="hot">
-          Book 1
-          <button id="Modify"  title="Modify Book">
-             <img src="images/modify-icon.png"/>
-           </button>
-          <button id="deleteBook" title="Delete Book">
-            <img src="images/icon-27-trash-can.png" />
-          </button>
-        </li>
-        <li id="two" class="cool"><em>Book 2</em>
-          <button id="Modify"  title="Modify Book">
-            <img src="images/modify-icon.png"/></button>
-          <button id="deleteBook" title="Delete Book">
-            <img src="images/icon-27-trash-can.png" />
-          </button>
-          <img class="cover" src="images/cover.jpg" title="book cover"  />
-          <ul>
-            <li id="title" class="cool">
-              <input type="text" class="bookDescription" placeholder="Title" />
-            </li>
-            <li id="author" class="cool">
-              <input type="text" class="bookDescription" placeholder="Author" />
-            </li>
-          </ul>
-        </li>
-        <li id="three" class="hot">Book 3
-          <button id="Modify"  title="Modify Book">
-            <img src="images/modify-icon.png"/>
-          </button>
-          <button id="deleteBook" title="Delete Book">
-            <img src="images/icon-27-trash-can.png" />
-          </button>
-        </li>
-        <li id="four">Book 4
-          <button id="Modify"  title="Modify Book">
-            <img src="images/modify-icon.png"/>
-          </button>
-          <button id="deleteBook" title="Delete Book">
-            <img src="images/icon-27-trash-can.png" />
-          </button>
-      </li>
+      <br />
+      
+      <button id="viewBtn">Your Library</button>
+      <ul id="mylist">
+        
       </ul>
-      <h2>Failures<br />
-        <input type="text" id="failures" placeholder="....." readonly /> 
+ 
     </div>
-    <!--<script src=""></script>-->
-    <script src="js/lab4.js"></script>
+        
   </body>
 </html>
